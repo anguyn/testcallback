@@ -23,6 +23,7 @@ const authenticate = (req, res, next) => {
 
 // API get / method
 app.get('/', (req, res) => {
+    console.log("Log cho Get method")
     res.send('Hello World!')
   })
 
