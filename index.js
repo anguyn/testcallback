@@ -21,6 +21,11 @@ const authenticate = (req, res, next) => {
   next();
 };
 
+// API get / method
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+  })
+
 // API endpoint để nhận callback từ hệ thống khác
 app.post('/api/contract/status', authenticate, (req, res) => {
   // Lấy object được truyền vào từ hệ thống khác
